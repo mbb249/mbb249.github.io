@@ -1,4 +1,3 @@
-/* Reset default styles for some elements */
 body,
 h1,
 h2,
@@ -9,12 +8,12 @@ li {
   padding: 0;
 }
 
-/* Apply basic styles */
+
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   background: linear-gradient(to bottom, #00bcd4, #007bff);
-  /* Gradient background */
+
 }
 
 header {
@@ -33,7 +32,7 @@ section {
   margin-bottom: 2rem;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Box shadow */
+
   padding: 2rem;
   border-radius: 10px;
   animation: fadeInUp 1s ease;
@@ -64,9 +63,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ... Existing CSS styles ... */
 
-/* Style for project buttons */
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -76,56 +73,56 @@ a:hover {
 
 .project-button {
   background-color: #4caf50;
-  /* New color */
+
   color: #fff;
   padding: 14px 28px;
-  /* Larger padding */
+
   border: none;
   border-radius: 30px;
-  /* Larger border radius */
+
   margin: 10px;
   cursor: pointer;
   font-weight: 600;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Added transition for hover effect */
+
 }
 
 .project-button:hover {
   background-color: #45a049;
-  /* Darker color on hover */
+
   transform: translateY(-3px);
-  /* Hover effect */
+
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Hover effect */
+
 }
 
 .back-button {
   display: block;
   margin-top: 2rem;
-  /* More margin to move the button down */
+
   text-align: center;
   background-color: #007bff;
   color: #fff;
   padding: 14px 28px;
-  /* Larger padding */
+
   border: none;
   border-radius: 30px;
-  /* Larger border radius */
+
   text-decoration: none;
   font-weight: 600;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Added transition for hover effect */
+
 }
 
 .back-button:hover {
   background-color: #0056b3;
   transform: translateY(-3px);
-  /* Hover effect */
+
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Hover effect */
+
 }
 
-/* Animation for fading in */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -138,23 +135,21 @@ a:hover {
   }
 }
 
-/* ... Existing CSS styles ... */
 
-/* Add a subtle animation to project buttons on hover */
 .project-button:hover {
   background-color: #45a049;
   transform: translateY(-3px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Add a "floating" animation to the back button on hover */
+
 .back-button:hover {
   background-color: #0056b3;
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Fun text animation for the header */
+
 header h1 {
   position: relative;
   display: inline-block;
@@ -182,7 +177,7 @@ header h1::after {
   }
 }
 
-/* Add a playful animated background to the header */
+
 header {
   background: linear-gradient(135deg, #007bff 10%, #00bcd4 90%);
   background-size: 200% 200%;
@@ -203,10 +198,10 @@ header {
   }
 }
 
-/* Container for images with a background color and sizing */
+
 .image-container {
   background-color: #f0f0f0;
-  /* Light gray background color */
+
   display: inline-block;
   margin: 10px;
   padding: 10px;
@@ -215,9 +210,9 @@ header {
 
 .image-container img {
   max-width: 300px;
-  /* Adjust the max-width to your preference */
+
   max-height: 200px;
-  /* Adjust the max-height to your preference */
+
   display: block;
   margin: 0 auto;
 }
@@ -247,20 +242,20 @@ header {
 
 .caption {
   color: black;
-  /* Set the text color to black */
+
   text-align: center;
   margin-top: 10px;
   font-size: 20px;
-  /* Increase font size for regular captions */
+
   font-family: 'Helvetica', sans-serif;
-  /* Use a cooler font - Adjust as needed */
+
 }
 
 .image-container.enlarged .caption {
   color: white;
-  /* Set the text color to white in the enlarged view */
+
   font-size: 36px;
-  /* Increase font size for enlarged captions */
+
   font-family: 'Roboto', sans-serif;
-  /* Use a different font for the enlarged view - Adjust as needed */
+
 }
