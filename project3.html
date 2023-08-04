@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Divide & Conquer </title>
   <!-- Link your CSS file -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_two.css">
 </head>
 
 <body>
@@ -18,17 +18,41 @@
     <section>
       <h2>Project Description</h2>
       <p>
-        This was a project I completed for CS4820, which had the goal of comparing the Divide & Conquer solution to the
-        Brute Force solution of the closest pair of points problem.
-        The BF approach is to merely check the distance between all the points, while the DC approach utilizes splitting
-        the field of points in half, and then only checking points
-        within a certain distance of the mid-line. As we can see, the BF approach does start off faster, but when N
-        reaches about 500 points, the DC approach becomes signifcantly better.
+        This was a smaller, yet very insightful project that I completed for CS4820 (Analysis of Advanced Algorithms).
+        This project addressed the Closest Pair of Points Problem, which is essentially finding the two closest points
+        in proximity in
+        a field of points.
+        The Brute Force approach was to simply find the distance between all the points and each other, which takes
+        O(n^2) time, and the Divide
+        & Conquer approach was to split the points in half, and then only measure the distance between points that met
+        certain criteria, which ultimately took O(nlogn) time.
+        I then wrote code to graph the two function performances over time, and as we can see, the BF approach does
+        start off faster, but when N
+        reaches about 500 points, the D&C approach becomes signifcantly better.
       </p>
-      <img src="DC.png" alt="Project 1 Image" width="1000" height="900">
-      <img src="BF.png" alt="Project 1 Image" width="1000" height="900">
-      <img src="graph.png" alt="Project 1 Image" width="1000" height="900">
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="DC.png" alt="Project 1 Image" width="800" height="900">
+        <div class="caption">Divide & Conquer Approach O(nlogn)</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="BF.png" alt="Project 1 Image" width="800" height="900">
+        <div class="caption">Brute Force Approach O(n^2)</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="bftest.png" alt="Project 1 Image" width="1000" height="900">
+        <div class="caption">Calculate Difference in Run-Time</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="graph.png" alt="Project 1 Image" width="1000" height="900">
+        <div class="caption">Graph Comparison (N = Number of Nodes)</div>
+      </div>
       <a href="index.html" class="back-button">Back to Home</a>
+
+      <script>
+        function toggleEnlarge(element) {
+          element.classList.toggle("enlarged");
+        }
+      </script>
     </section>
   </main>
 

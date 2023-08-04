@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QBERT</title>
   <!-- Link your CSS file -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_two.css">
 </head>
 
 <body>
@@ -16,22 +16,50 @@
 
   <main>
     <section>
-      <h2>Description</h2>
+
       <p>
-        This was my final project for CS3110, which I completed with 3 other students. It took us about 3 months to
-        write all the code and tests cases, and I was responsible for writing about 1000 lines of code. I mainly focused
-        on developing the Player module and the Itemshop/Cutscenes.
+        Of all my projects, this one was certainly my favorite. This was my final project for CS3110 (Functional
+        Programming),
+        and I completed this project with three other students. It took us about 3 months to
+        come up with ideas, plan out our code, and then ultimately write all the code and tests cases. In the end, this
+        project amassed over 1600 LOC.
+        I mainly focused on developing the Player module and the Itemshop/Cutscenes.
         All of the code was written in OCaml, and we mainly utilized the Graphics module to create our game. Please look
         below to see images from the final product, including the item shop, the home screen, actual gameplay, and part
         of a cutscene!
       </p>
-      <img src="qbertHats.png" alt="Project 1 Image" width="300" height="200">
-      <img src="qbertStartScreen.png" alt="Project 1 Image" width="300" height="200">
-      <img src="qbertGame.png" alt="Project 1 Image" width="300" height="200">
-      <img src="qbertSaucer.png" alt="Project 1 Image" width="300" height="200">
-      <img src="qbertCutScene.png" alt="Project 1 Image" width="300" height="200">
-      <img src="qbertDeath.png" alt="Project 1 Image" width="300" height="200">
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="qbertHats.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">Item Shop</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="qbertStartScreen.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">Start Screen</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="qbertGame.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">Game Play</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="qbertSaucer.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">Using Saucer</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="qbertCutScene.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">Cut Scene</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="qbertDeath.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">Death Sequence</div>
+      </div>
       <a href="index.html" class="back-button">Back to Home</a>
+
+      <script>
+        function toggleEnlarge(element) {
+          element.classList.toggle("enlarged");
+        }
+      </script>
+
 
     </section>
   </main>

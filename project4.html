@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Concurrent Queues </title>
   <!-- Link your CSS file -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_two.css">
 </head>
 
 <body>
@@ -18,17 +18,43 @@
     <section>
       <h2>Project Description</h2>
       <p>
-        This was the final project I completed for CS4410. Unfortunately, there are no striking visuals available;
-        however, the project revolved around developing concurrent queues in harmony.
-        In the first approach (as seen in the first two images), I created several methods that involved locks to add
-        safety for concurrent edits to the queue. In the last photo, you can see
-        I introduced notify() statements which were paired with conditionals to also create safety for concurrent edits,
-        in a different manner.
+        This was the largest project I took on the involved concurrency, which made it a great final project for CS4410
+        (Operating Systems).
+
+        I completed this project with one other partner over the course of two months.
+
+
+        Unfortunately, there are no striking visuals available, as the project revolved around developing concurrent
+        queues in harmony.
+        In the first approach (as seen in the first two images), I used locks to account for concurrency in the queues.
+        In the second approach (the last two photos)
+        we used notify() and wait() statements to account for concurrency. Both of these methods are equally effective;
+        however, it was nice to see multiple approaches to solving the same problem.
+
       </p>
-      <img src="cq1.png" alt="Project 1 Image" width="900" height="900">
-      <img src="cq2.png" alt="Project 1 Image" width="900" height="900">
-      <img src="cq3.png" alt="Project 1 Image" width="900" height="900">
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="cq1.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">Some Methods Using Locks</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="cq2.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">Another Method Using Locks</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="cq3.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">Method Containing notify() and notifyAll()</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="cq4.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">Method Containing wait()</div>
+      </div>
       <a href="index.html" class="back-button">Back to Home</a>
+
+      <script>
+        function toggleEnlarge(element) {
+          element.classList.toggle("enlarged");
+        }
+      </script>
     </section>
   </main>
 

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RISC-V Processor</title>
   <!-- Link your CSS file -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_two.css">
 </head>
 
 <body>
@@ -16,19 +16,44 @@
 
   <main>
     <section>
-      <h2>Project Description</h2>
       <p>
-        This was a major project that I completed for CS3410, which was the development of a RISC-V Processor.
-        I completed this project solo, and the two major parts of the project were the development of the ALU, and the
-        connection of all the abstractions to form the Processor.
-        In the images below, you can see how I constructed the 32-bit adder, the ALU, and the overall Processor. In the
-        end, this Processor was able to mock all of the basic functionality of a real 32-bit RISC-V Processor.
+        This is one of the most unique projects I have completed so far, and it was for CS3410 (Computer System
+        Organization).
+        The goal of this project was to first develop a RISC-V ALU and then eventually construct a RISC-V Processor.
+        My ALU contained all the basic functionality of the real RISC-V ALU, and the processor mocked the behavior of
+        the real one as well.
+        The construction of the ALU involved creating a 32-Bit Adder, 32-Bit Shifter, and numerous Binop and Unop
+        functions.
+        This project was very time consuming and took nearly two months to complete, but it was very cool once it was
+        finished.
+
       </p>
-      <img src="riscAdder.png" alt="Project 1 Image" width="900" height="500">
-      <img src="riscALU.png" alt="Project 1 Image" width="900" height="500">
-      <img src="riscProcessor.png" alt="Project 1 Image" width="900" height="500">
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="1bitadder.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">1-Bit Adder</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src=" riscAdder.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">32-Bit Adder</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src=" riscALU.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">Complete ALU</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src=" riscProcessor.png" alt="Project 1 Image" width="900" height="900">
+        <div class="caption">Processor</div>
+      </div>
       <a href="index.html" class="back-button">Back to Home</a>
+
+      <script>
+        function toggleEnlarge(element) {
+          element.classList.toggle("enlarged");
+        }
+      </script>
     </section>
+
+
 
   </main>
 
