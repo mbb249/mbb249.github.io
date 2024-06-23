@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Graphics Projects </title>
+  <link rel="stylesheet" href="styles_two.css">
+</head>
+
+<body>
+  <header>
+    <h1>Computer Graphics Projects</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Description</h2>
+      <p>
+        These were a few of the projects I completed for my Comptuer Graphics class last semester. C1 involved building
+        a particle system.
+        C2 was a ray tracing project and also featured Constructive Solid Geometry. The Final was done in a group of 4
+        and consisted of Toon Shading, Moving Camera,
+        Particle Systems, and Terrain Alteration. All of these projects were done in Typescript and involved significant
+        amounts of Linear Algebra. I also included some images from a practicum course I took that was associated with
+        Computer Graphics.
+        Our project was to remake Temple Run, and we remade it as "Henry on the Loose". The game featured a character
+        made in Blender, and
+        was made primarily in Unity using many of their built in tools, along with C# code for specific game
+        functionality.
+
+      </p>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="C1.png" alt="C1 Image" width="900" height="900">
+        <div class="caption">Creative 1</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="C2.png" alt="Creative 2" width="900" height="900">
+        <div class="caption">Creative 2</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="Final.png" alt="Final Project Image" width="900" height="900">
+        <div class="caption">Final Project Image</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="4621Blender.png" alt="Practicum Blender Usage" width="900" height="900">
+        <div class="caption">Practicum Blender Usage</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="4621Game.png" alt="Practicum Final Game" width="900" height="900">
+        <div class="caption">Practicum Final Game</div>
+      </div>
+      <div class="image-container" onclick="toggleEnlarge(this)">
+        <img src="4621States.png" alt="Practicum Unity Usage" width="900" height="900">
+        <div class="caption">Practicum Unity Usage</div>
+      </div>
+      <a href="index.html" class="back-button">Back to Home</a>
+
+      <script>
+        function toggleEnlarge(element) {
+          element.classList.toggle("enlarged");
+        }
+      </script>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Miles Bramwit's Website</p>
+  </footer>
+</body>
+
+</html>
